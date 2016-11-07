@@ -1,5 +1,5 @@
 # s40523205_hw
 
-http://mdecourse.github.io/2016fallcpb_hw
+http://s40523205.mdecourse.github.io/2016fallcp_hw
 
-http://mdecourse.github.io/2016fallcpb_hw/blog
+http://s40523205.github.io/2016fallcp_hw/blog
