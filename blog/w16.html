@@ -340,15 +340,34 @@ brython(1);
 from browser impot alert
 from browser impot document
 #print("test")
-#alert("test")
+alert("test")
 con1 = document["con"]
-for i in range(1)
-     #con1 <="test"+"<br />"
-     yourInput=int(input("請輸入一個整數!))
-     #con1 <="test" + html.BR()
-     output = yourInput + 1
-     con1 <="你輸入的整數加上1之後，為"+ str(output)
+#1.利用亂數模組產生標準答案
+標準答案 = random.randint(1,100)
+
+#2.取得使用者所猜的整數(可以使用try
+except:防止輸入非整數)
+#3.根據使用者與標準答案比較大小,並且回應提示字串
+#4.假如利用while迴圈,可以在使用者沒有猜對之前繼續輸入,並且累計猜題次數
+'''
+con1 <=str(標準答案)
+'''
+try:
+    for i in range(1):
+        #con1 <= "test"+"<br/>"
+        yourInput=int(input("請輸入一個整數!")
+        con1 <= "test"+html.BR()
+        output =yourInput + 1
+        con1 <="你輸入的整數加上1之後,為" + str(output)
+except:
+    con1 <= "拜託請輸入整數!"
+'''
+def b1(e):
+    alert("click")
+document["b1"].bind("click",b1)
 </script>
+
+<p><button id="b1">玩猜數字遊戲<button>    </p>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -364,6 +383,11 @@ for i in range(1)
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
+                        <a href="./2016fallcp-qi-mo-kao-zhou.html">
+                            2016fallcp 期末考週
+                        </a>
+                    </li>
+                    <li class="list-group-item">
                         <a href="./w16.html">
                             w16
                         </a>
@@ -376,11 +400,6 @@ for i in range(1)
                     <li class="list-group-item">
                         <a href="./w10-brython-hui-tu-fan-li.html">
                             W10 Brython 繪圖範例
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="./2016fall-cheng-shi-lian-xi-ti-12345.html">
-                            2016Fall 程式練習題-12345
                         </a>
                     </li>
                     <li class="list-group-item">
@@ -444,7 +463,7 @@ for i in range(1)
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2016 KMOL
+         <div class="col-xs-10">&copy; 2017 KMOL
             &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
